@@ -1,0 +1,20 @@
+1. 元素宽度不可以超过屏幕宽度(750rpx),不然会导致页面左右滑动
+2. ⚠️width: 100% --> margin & padding
+3. 有一些屏幕宽度不匹配 750rpx
+4. 获取用户敏感信息需要用户的点击行为(必须的)
+5. 对于button的边框设置，要放在:after里面设置，才生效
+6. wxs不稳定
+7. button 设置type会导致无法更改背景色
+8. 安卓上微信原生的支付成功画面关闭后立即执行reLaunch, 会报"cannot invoke reLaunch in background"错误
+
+9. 支付
+  注意：
+    appid必须为最后拉起收银台的小程序appid；
+    mch_id为和appid成对绑定的支付商户号，收款资金会进入该商户号；
+    trade_type请填写JSAPI；
+    openid为appid对应的用户标识，即使用wx.login接口获得的openid
+
+  商户在小程序中先调用该接口在微信支付服务后台生成预支付交易单，返回正确的预支付交易后调起支付。
+    https://api.mch.weixin.qq.com/pay/unifiedorder
+
+10. data 初始化所有页面的data字段

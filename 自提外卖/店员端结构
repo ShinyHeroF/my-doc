@@ -1,0 +1,77 @@
+✅orderHead
+  self
+    newOrder
+    reservationOrder
+    deliveryErrorOrder
+    canceledOrder
+  components
+    inProgressOrder
+    finishedOrder
+    urgentOrder
+    aftersalerefundOrder
+  none
+
+✅orderPreparation
+  self
+    canceledOrder
+    finishedOrder
+    aftersalerefundOrder
+  components
+    inProgressOrder
+    reservationOrder
+    urgentOrder
+  none
+    newOrder
+    deliveryErrorOrder
+
+✅orderCommodity
+  self
+    finishedOrder
+    inProgressOrder
+    aftersalerefundOrder
+  components
+    newOrder
+    reservationOrder
+    deliveryErrorOrder
+    canceledOrder
+    urgentOrder
+  none
+
+✅orderCustomer
+  self
+  components
+    canceledOrder
+    finishedOrder
+    inProgressOrder
+    afterSaleRefundOrder
+    deliveryErrorOrder
+    newOrder
+    reservationOrder
+    urgentOrder
+  none
+
+✅orderDelivery
+  self
+  components
+    canceledOrder
+    finishedOrder
+    inProgressOrder
+    afterSaleRefundOrder
+    urgentOrder
+  none
+    deliveryErrorOrder
+    newOrder
+    reservationOrder
+
+✅orderExtraInfo
+  self
+  components
+    canceledOrder
+    finishedOrder
+    inProgressOrder
+    afterSaleRefundOrder
+    deliveryErrorOrder
+    newOrder
+    reservationOrder
+    urgentOrder
+  none
